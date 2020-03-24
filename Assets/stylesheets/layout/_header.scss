@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+// Header Elements
+.Header__container {
+	position: fixed;
+	top: 0;
+	z-index: 104;
+	width: 100%;
+	background: $white-base;
+	height: 0;
+}
+
+// Promotions banner
+.MarketingContainer__marketing-container {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	height: $promo-height;
+	background-color: $brand-color;
+	transition: margin-top .4s ease-out;
+	z-index: 105;
+	.MarketingContainer__promotion--content {
+		margin: 0 2vw;
+		@include font-size(14px);
+		@include respond-to('phone-only') {
+			@include font-size(11px);
+		}
+		color: $white-base;
+		a{
+			color: $white-base;
+		}
+	}
+}
+
+

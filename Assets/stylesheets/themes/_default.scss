@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+hr {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: 0;
+	border-top: 1.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand{
+	font-size: 0px;
+}
+/********************
+	Icons
+*********************/
+.Icon__icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	pointer-events: none
+}
+.Icon__icon--x-small {
+	width: .5rem;
+	height: .5rem
+}
+.Icon__icon--small {
+	width: 1rem;
+	height: 1rem
+}
+.Icon__icon--medium {
+	width: 1.5rem;
+	height: 1.5rem
+}
+.Icon__icon--large {
+	width: 2rem;
+	height: 2rem
+}
+.Icon__icon--x-large {
+	width: 3rem;
+	height: 3rem
+}
+.Icon__icon-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	fill: $brand-color;
+}
+
+
+
+.layout__margin-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+.layout__clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.layout__gutters {
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+		.layout__gutters {
+			padding-right: 2.5rem;
+			padding-left: 2.5rem;
+		}
+		@include respond-to('tablet-portrait') {
+			padding-right: 3rem;
+			padding-left: 3rem;
+		}
+}
+
+

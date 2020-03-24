@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables. (Globals)
+// -----------------------------------------------------------------------------
+
+
+//== Colors
+//
+
+//## White colors
+$white-base:              rgba(255, 255, 255, 1) !default; // #fff
+$off-white:               #f6f6f6 !default;
+$white_70:                hsla(0, 0%, 100%, .7);
+
+//## Black colors
+$black-base:              rgba(0, 0, 0, 1) !default; // #000
+$black_60:                rgba(0, 0, 0, .6);
+$black_30:                rgba(0, 0, 0, .3);
+
+
+//## Gray colors
+$gray-darker:             lighten($black-base, 13.5%) !default; // #222
+$gray-dark:               lighten($black-base, 20%) !default;   // #333
+$gray:                    lighten($black-base, 33.5%) !default; // #555
+$gray-light:              lighten($black-base, 46.7%) !default; // #777
+$gray-lighter:            lighten($black-base, 93.5%) !default; // #eee
+
+//## Brand colors
+$brand-color:             #8d849c !default;//#6281af !default;
+$brand-color-darker:      darken($brand-color, 15%) !default; 
+$brand-color-dark:        darken($brand-color, 10%) !default; 
+$brand-color-mid:         darken($brand-color, 5%) !default; 
+$brand-color-light:       lighten($brand-color, 10%) !default; 
+$brand-color-lighter:     lighten($brand-color, 15%) !default; 
+
+//## brand colors for use across Bootstrap.
+$brand-primary:           $brand-color !default; 
+$brand-success:           #5cb85c !default;
+$brand-info:              #5bc0de !default;
+$brand-warning:           #f0ad4e !default;
+$brand-danger:            #d9534f !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Global text color on `<body>`.
+$text-color:              $gray-dark !default;
+//** Global textual link color.
+$link-color:              $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:        lighten($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration:   underline !default;
+
+$promo-height: 2rem;
+$header-height: 3rem;
+$input-height: 42px;
+$border-radius: 3px;
+
+//== Typography
+//
+//## Font, Font Size
+$font-primary: 'Barlow', 'Helvetica', 'Arial', sans-serif !default;
+$font-secondary: 'Helvetica Neue', 'Helvetica', 'Courier New', 'Monaco', monospace !default;
+
+// Did not need this but good trick to know
+// $font-size-base:          14px !default;
+// $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+// $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+// $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+// $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+// $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+// $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+// $font-size-h5:            $font-size-base !default;
+// $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+/// Breakpoints map 
+$breakpoints: (
+    'phone-only':  ( max-width:  576px ),
+    'tablet-portrait':  ( min-width:  768px ),
+    'tablet-landscape':  ( min-width:  1024px ),
+    'desktop':  ( min-width:  1200px ),
+    'big-desktop':  ( min-width: 1800px )
+) !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://Assets/';
+$base-url: '/Assets/' !default;

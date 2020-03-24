@@ -1,0 +1,10 @@
+main {
+	&.Header__site-padding-top-with-promo {
+		padding-top: $header-height + $promo-height + 1.5rem;
+	}
+  &.flex {
+    min-height: calc(100vh - 5rem);
+    flex: 1 0 auto;
+    flex-flow: column nowrap;
+  }
+}
