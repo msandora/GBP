@@ -1,6 +1,6 @@
 main {
 	&.Header__site-padding-top-with-promo {
-		padding-top: $header-height + $promo-height + 1.5rem;
+		padding-top: $header-height + $promo-height + $promo-height + 3rem;
 	}
   &.flex {
     min-height: calc(100vh - 5rem);
