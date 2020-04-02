@@ -10,27 +10,29 @@
 	width: 100%;
 	background: $white-base;
 	height: 0;
-}
-
-// Promotions banner
-.MarketingContainer__marketing-container {
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	padding: $promo-height;
-	background-color: $brand-color;
-	transition: margin-top .4s ease-out;
-	z-index: 105;
-	.MarketingContainer__promotion--content {
-		margin: 0 2vw;
-		@include font-size(14px);
-		@include respond-to('phone-only') {
-			@include font-size(11px);
-		}
-		color: $white-base;
-		a{
-			color: $white-base;
+	// Promotions banner
+	.MarketingContainer__marketing-container {
+		display: flex;
+		position: relative;
+		align-items: center;
+		padding: 1rem;
+		background-color: $brand-color;
+		transition: margin-top .4s ease-out;
+		z-index: 105;
+		.MarketingContainer__promotion--link{
+			display: block;
+			.fa {
+				float: right;
+				color: $white-base;
+				span{
+					color: $white-base;
+					font-family: $font-primary;
+				}
+				&.fa-map-marker:before {
+					float: right;
+					margin-left: 7px;
+				}
+			}
 		}
 	}
 }

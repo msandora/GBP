@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="shortcut icon" href="/Assets/images/favicon.ico"  />
-	
-	<link rel="preload" href="/Assets/stylesheets/main.css" as="style">
-	<link rel="stylesheet" href="/Assets/stylesheets/main.css" media="print" onload="this.media='all'">
+	<link rel="shortcut icon" href="/GBP/Assets/images/favicon.ico"  />
+	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  /> 
+
+	<link rel="preload" href="/GBP/Assets/stylesheets/main.css" as="style">
+	<link rel="stylesheet" href="/GBP/Assets/stylesheets/main.css" media="print" onload="this.media='all'">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -21,8 +22,10 @@
 			<!-- Header -->
 			<header class="Header__container">
 				<section class="MarketingContainer__marketing-container">
-					<div class="MarketingContainer__promotion--content font-medium">
-						<span>Lorem ipsum dolor sit amets</span>
+					<div class="container">
+						<a class="MarketingContainer__promotion--link"  href="#Buy">
+							<span class="fa fa-map-marker"><span>Find a Store</span></span>				
+						</a>
 					</div>
 				</section>
 
@@ -30,7 +33,7 @@
 				<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 					<div class="container">
 						<a class="navbar-brand p-0" href="/">								
-							<img src="/Assets/images/GM_WEBSITE_LOGO_150x30.jpg" class="card-img-top" alt="Gracemoor Beauty Logo">
+							<img src="/GBP/Assets/images/GM_WEBSITE_LOGO_150x30.jpg" class="card-img-top" alt="Gracemoor Beauty Logo">
 						</a>
 						<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -55,11 +58,47 @@
 
 			<!-- Content -->
 			<main class="flex Header__site-padding-top-with-promo">
-				<section class="container">
+				<!-- Carousel -->
+				<div id="carouselId" class="carousel container" data-ride="carousel">
+					<ol class="carousel-indicators">
+					<li data-target="#carouselId" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselId" data-slide-to="1"></li>
+					<li data-target="#carouselId" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<picture>
+							<source sizes="(max-width: 576px)" srcset="/GBP/Assets/images/GB_APLUS_1_TOPBANNER_970x300.jpg">
+							<img class="d-block" src="/GBP/Assets/images/GB_APLUS_1_TOPBANNER_970x300.jpg" alt="First Slide">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source sizes="(max-width: 576px)" srcset="/GBP/Assets/images/GB_APLUS_INFO_970x300.jpg">
+							<img class="d-block" src="/GBP/Assets/images/GB_APLUS_INFO_970x300.jpg" alt="Second Slide">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source sizes="(max-width: 576px)" srcset="/GBP/Assets/images/GB_APLUS_WORKS_970x300.jpg">
+							<img class="d-block" src="/GBP/Assets/images/GB_APLUS_WORKS_970x300.jpg" alt="Third Slide">
+						</picture>
+					</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<section class="container mt-4">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="card border-0">
-								<img src="/Assets/images/GM_WEBSITE_PRODUCT_500x300.jpg" class="card-img-top" alt="...">
+								<img src="/GBP/Assets/images/GM_WEBSITE_PRODUCT_500x300.jpg" class="card-img-top" alt="...">
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -91,10 +130,10 @@
 							<div class="container px-0">
 								<div class="row">
 									<div class="col-md-6 pb-4">
-										<img src="/Assets/images/GM_WEBSITE_BENEFIT_2BEFORE_300x300.jpg" class="card-img-top" alt="...">
+										<img src="/GBP/Assets/images/GM_WEBSITE_BENEFIT_2BEFORE_300x300.jpg" class="card-img-top" alt="...">
 									</div>
 									<div class="col-md-6 pb-4">
-										<img src="/Assets/images/GM_WEBSITE_BENEFIT_2AFTER_300x300.jpg" class="card-img-top" alt="...">
+										<img src="/GBP/Assets/images/GM_WEBSITE_BENEFIT_2AFTER_300x300.jpg" class="card-img-top" alt="...">
 									</div>
 								</div>
 							</div>
@@ -115,10 +154,10 @@
 							<div class="container px-0">
 								<div class="row">
 									<div class="col-md-6 pb-4">
-										<img src="/Assets/images/GM_WEBSITE_BENEFIT_1BEFORE_300x300.jpg" class="card-img-top" alt="...">
+										<img src="/GBP/Assets/images/GM_WEBSITE_BENEFIT_1BEFORE_300x300.jpg" class="card-img-top" alt="...">
 									</div>
 									<div class="col-md-6 pb-4">
-										<img src="/Assets/images/GM_WEBSITE_BENEFIT_1AFTER_300x300.jpg" class="card-img-top" alt="...">
+										<img src="/GBP/Assets/images/GM_WEBSITE_BENEFIT_1AFTER_300x300.jpg" class="card-img-top" alt="...">
 									</div>
 								</div>
 							</div>
@@ -140,7 +179,7 @@
 					<div class="row">
 						<div class="col-md-3">
 							<div class="card border-0">
-								<img class="card-img-top" src="/Assets/images/GM_WEBSITE_INFO_1_250x250.jpg" alt="Card image">
+								<img class="card-img-top" src="/GBP/Assets/images/GM_WEBSITE_INFO_1_250x250.jpg" alt="Card image">
 								<div class="card-body">
 									<h5 class="card-title mb-3">FIGHT TOMORROWʼS LINES & WRINKLES</h5>
 									<div class="card-text text-black-50">
@@ -151,7 +190,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="card border-0">
-								<img class="card-img-top" src="/Assets/images/GM_WEBSITE_INFO_2_250x250.jpg" alt="Card image">
+								<img class="card-img-top" src="/GBP/Assets/images/GM_WEBSITE_INFO_2_250x250.jpg" alt="Card image">
 								<div class="card-body">
 									<h5 class="card-title mb-3">TRAVEL FRIENDLY AND EASY TO USE</h5>
 									<div class="card-text text-black-50">
@@ -162,7 +201,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="card border-0">
-								<img class="card-img-top" src="/Assets/images/GM_WEBSITE_INFO_3_250x250.jpg" alt="Card image">
+								<img class="card-img-top" src="/GBP/Assets/images/GM_WEBSITE_INFO_3_250x250.jpg" alt="Card image">
 								<div class="card-body">
 									<h5 class="card-title mb-3">CRUELTY FREE. PARABEN FREE. FRAGRANCE FREE.</h5>
 									<div class="card-text text-black-50">
@@ -175,7 +214,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="card border-0">
-								<img class="card-img-top" src="/Assets/images/GM_WEBSITE_INFO_4_250x250.jpg" alt="Card image">
+								<img class="card-img-top" src="/GBP/Assets/images/GM_WEBSITE_INFO_4_250x250.jpg" alt="Card image">
 								<div class="card-body">
 									<h5 class="card-title mb-3">DIRECTIONS</h5>
 									<div class="card-text text-black-50">
@@ -187,18 +226,24 @@
 					</div>
 					<hr>
 				</section>
+				<a class="anchor" id="Buy">Buy Now</a>
 				<section class="container">
 					<div class="row py-4">
 						<div class="col-md-6">
-							<div class="card border-0">
-								<img src="https://via.placeholder.com/500x250.png?text=Video:500x250" class="card-img-top" alt="...">
+							<div class="card border-0 plx-youtube">
+								<img class="tru-youtube-image" src="/GBP/Assets/images/GBP_youtube_default.jpg" alt="Available on Amazon">
+
+								<div class="video_id visually-hidden">jMao1DUOH4o</div>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="card border-0">
-								<div class="card-body">
-									<h5 class="card-title mb-3">SAMPLE TEXT</h5>
-									<div class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore te feugait nulla facilisi.
+								<div class="card-body text-center">
+									<h3 class="card-title mb-3">LOOK YOUR BEST TODAY</h3>
+									<div class="card-text">		
+										<a href="https://www.amazon.com/dp/B085PPP6DZ">
+											<img src="/GBP/Assets/images/availableAmazon.jpg" alt="Available on Amazon">
+										</a>
 									</div>
 								</div>
 							</div>
@@ -391,7 +436,13 @@
 						<div class="Footer__signup-content layout__margin-auto">
 							<div class="Footer__signup-column">
 								<div class="layout__gutters">
-									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore te feugait nulla facilisi.</span>
+									<p>GracemoorTM Beauty</p>
+
+									<p>Westhampton Beach</p>
+										
+									<p>NY, 11978, USA</p>
+										
+									<p>Contact Us: <a class="Footer__link" href="mailto:customercare@gracemoorbeauty.com">customercare@gracemoorbeauty.com</a></p>
 								</div>
 							</div>
 						</div>
@@ -400,7 +451,7 @@
 			</div>
 			<div class="BottomNav__container">
 				<div class="BottomNav__container-inner layout__gutters">
-					<span class="BottomNav__copyright">Lorem ipsum dolor sit amet</span>
+					<p>Gracemoor Beauty Products</p>
 				</div>
 			</div>
 		</footer>
@@ -409,4 +460,4 @@
 </body>
 </html>
 
-<script async src="/Assets/js/main.js" ></script>
+<script async src="/GBP/Assets/js/main.js" ></script>

@@ -24,7 +24,7 @@ $gray-light:              lighten($black-base, 46.7%) !default; // #777
 $gray-lighter:            lighten($black-base, 93.5%) !default; // #eee
 
 //## Brand colors
-$brand-color:             #732E4A !default;//#6281af !default;
+$brand-color:             #732E4A !default;
 $brand-color-darker:      darken($brand-color, 15%) !default; 
 $brand-color-dark:        darken($brand-color, 10%) !default; 
 $brand-color-mid:         darken($brand-color, 5%) !default; 
@@ -33,6 +33,7 @@ $brand-color-lighter:     lighten($brand-color, 15%) !default;
 
 //## brand colors for use across Bootstrap.
 $brand-primary:           $brand-color !default; 
+$brand-secondary:         #CDB5A7 !default;
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
 $brand-warning:           #f0ad4e !default;
@@ -46,13 +47,13 @@ $brand-danger:            #d9534f !default;
 //** Global text color on `<body>`.
 $text-color:              $gray !default;
 //** Global textual link color.
-$link-color:              $brand-primary !default;
+$link-color:              $off-white !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:        lighten($link-color, 15%) !default;
+$link-hover-color:        $white-base !default;
 //** Link hover decoration.
 $link-hover-decoration:   underline !default;
 
-$promo-height: 0.5rem;
+$promo-height: 2.875rem;
 $header-height: 3rem;
 $input-height: 42px;
 $border-radius: 3px;

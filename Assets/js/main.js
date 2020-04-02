@@ -18,13 +18,45 @@ $(function () {
           var windowpos = $(window).scrollTop();
           if (windowpos >= pos.top & windowpos >= 20) {
             content.addClass("content--unpinned");
-            promo.addClass("py-0");
+            promo.addClass("py-2");
             navbar.addClass("py-0");
           } else {
             content.removeClass("content--unpinned");
-            promo.removeClass("py-0");
+            promo.removeClass("py-2");
             navbar.removeClass("py-0");
           }
       });
   }
 });
+
+$(function () {
+  function createYoutubeVideo() {
+      // Create  image placeholder from youtube to create wrapper
+      var videos = $(".plx-youtube");
+      $.each(videos, function () {
+          var embedId = $(this).find(".video_id").text();
+          var videoPath;
+          var iframe;
+              
+          // Once clicked replaces placeholder image for video iframe
+          $(this).click(function () {
+              videoPath = "https://www.youtube.com/embed/" + embedId + "?rel=0&showinfo=0&autoplay=1&mute=1&playsinline=1&modestbranding=1";
+              iframe = $("<iframe width='100%' height='300px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
+              $(this).empty();
+              $(this).append(iframe);
+          });
+  
+          $(this).keypress(function(e) {
+              if (e.which === 13) {
+                  videoPath = "https://www.youtube.com/embed/" + embedId + "?rel=0&showinfo=0&autoplay=1&mute=1&playsinline=1&modestbranding=1";
+                  iframe = $("<iframe width='100%' height='300px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
+                  $(this).empty();
+                  $(this).append(iframe);
+              }
+          });
+      });
+  }
+  
+  //Create Youtube Video Iframe
+  createYoutubeVideo();
+  });
