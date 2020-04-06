@@ -3,9 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-
-
-button{
+button {
 	background: transparent;
 	border: 0;
     cursor:pointer;
@@ -29,11 +27,10 @@ button, input {
     background: $brand-color;
     border: 1px solid $brand-color;
     @include on-event {
-        color: $link-color;
+        color: $brand-color;
         background-color: $white-base;
         border-color: $brand-color;
     }
-
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, 
@@ -57,16 +54,31 @@ button, input {
 }
 
 .btn--big {
-	position: relative;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    -webkit-appearance: none;
+    font-size: 1.5rem;
     width: 100%;
-    border-radius: 0.25rem;
-    transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
-    padding: 0.75rem 1.5rem 0.8125rem;
 }
 
+.play-button {
+    z-index: 1;
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    background-color: #000;
+    box-shadow: 0 0 30px rgba(0,0,0,.6);
+    opacity: .8;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    &:before {
+        content: "";
+        border-color: transparent transparent transparent #fff;
+        border-style: solid;
+        border-width: 15px 0 15px 26px;
+        position: absolute;
+        top: 50%;
+        left: 50%!important;
+        transform: translate3d(-50%,-50%,0);
+    }
+}

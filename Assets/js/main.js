@@ -41,7 +41,7 @@ $(function () {
           // Once clicked replaces placeholder image for video iframe
           $(this).click(function () {
               videoPath = "https://www.youtube.com/embed/" + embedId + "?rel=0&showinfo=0&autoplay=1&mute=1&playsinline=1&modestbranding=1";
-              iframe = $("<iframe width='100%' height='300px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
+              iframe = $("<iframe width='100%' height='280px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
               $(this).empty();
               $(this).append(iframe);
           });
@@ -49,7 +49,7 @@ $(function () {
           $(this).keypress(function(e) {
               if (e.which === 13) {
                   videoPath = "https://www.youtube.com/embed/" + embedId + "?rel=0&showinfo=0&autoplay=1&mute=1&playsinline=1&modestbranding=1";
-                  iframe = $("<iframe width='100%' height='300px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
+                  iframe = $("<iframe width='100%' height='280px'>").attr("frameborder", "0").attr("allowfullscreen", "").attr("src", videoPath);
                   $(this).empty();
                   $(this).append(iframe);
               }

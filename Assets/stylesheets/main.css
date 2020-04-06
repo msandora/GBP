@@ -10873,7 +10873,7 @@ button, input {
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  color: #f6f6f6;
+  color: #732E4A;
   background-color: white;
   border-color: #732E4A;
 }
@@ -10900,21 +10900,37 @@ button, input {
 }
 
 .btn--big {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
+  font-size: 1.5rem;
   width: 100%;
-  border-radius: 0.25rem;
-  -webkit-transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
-  transition: background-color 0.15s ease-out 0s, color 0.15s ease-out 0s;
-  padding: 0.75rem 1.5rem 0.8125rem;
+}
+
+.play-button {
+  z-index: 1;
+  cursor: pointer;
+  width: 90px;
+  height: 60px;
+  background-color: #000;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  opacity: .8;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.play-button:before {
+  content: "";
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 15px 0 15px 26px;
+  position: absolute;
+  top: 50%;
+  left: 50% !important;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 
 #carouselId.carousel {
