@@ -61,7 +61,7 @@ $border-radius: 3px;
 //== Typography
 //
 //## Font, Font Size
-$font-primary: 'Futura', 'Trebuchet MS', 'Arial', sans-serif !default;
+$font-primary: 'Didact Gothic', 'Futura', sans-serif !default;
 $font-secondary: 'Helvetica Neue', 'Helvetica', 'Courier New', 'Monaco', monospace !default;
 
 /// Breakpoints map 
@@ -77,5 +77,5 @@ $breakpoints: (
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
-///   $base-url: 'http://GBP/Assets/';
-$base-url: '/GBP/Assets/' !default;
+///   $base-url: 'http://Assets/';
+$base-url: '/Assets/' !default;

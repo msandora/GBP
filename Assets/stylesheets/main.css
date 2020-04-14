@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -10551,7 +10552,7 @@ html, body {
 body {
   margin: 0px;
   background: white;
-  font-family: "Futura", "Trebuchet MS", "Arial", sans-serif;
+  font-family: "Didact Gothic", "Futura", sans-serif;
   position: relative;
 }
 
@@ -10624,8 +10625,8 @@ a.anchor {
 * Basic typography style for copy text
 */
 body {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   color: #555555;
 }
 
@@ -10726,7 +10727,7 @@ body {
 
 .Header__container .MarketingContainer__marketing-container .MarketingContainer__promotion--link .fa span {
   color: white;
-  font-family: "Futura", "Trebuchet MS", "Arial", sans-serif;
+  font-family: "Didact Gothic", "Futura", sans-serif;
 }
 
 .Header__container .MarketingContainer__marketing-container .MarketingContainer__promotion--link .fa.fa-map-marker:before {
